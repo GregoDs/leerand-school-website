@@ -38,6 +38,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const navRef = useRef(null);
   const { pathname } = useLocation();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const nav = navRef.current;
@@ -64,7 +65,10 @@ const Navbar = () => {
   );
 
   return (
-    <nav ref={navRef} className={`navbar ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
+    <nav
+      ref={navRef}
+      className={`navbar ${isHome ? 'navbar-home' : scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}
+    >
       <div className="navbar-desktop">
         <Link to="/" className="navbar-brand" aria-label="Leerand Schools home">
           <img src={logo} alt="" />
