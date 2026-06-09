@@ -1,0 +1,133 @@
+.our-identity {
+    padding: 50px 80px 50px 0; /* Right padding only */
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #2e2e6a;
+    position: relative;
+    overflow: hidden; /* Ensures the image doesn't cause horizontal scroll */
+    min-height: 98vh;
+    
+  }
+  
+  .identity-section-title {
+    color: #c62828;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    padding-left: 10px; /* Add left padding only to the title */
+  }
+  
+  .identity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+  
+  .identity-image {
+    width: 50%;
+    margin-top: 50px;
+    /* margin-left: -10px; Pulls image to the left edge */
+    margin-left: 60px;
+  }
+  
+  .identity-image img {
+    width: 100%;
+    max-width: 800px; /* Increased max-width */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+    border: 10px solid #f9f7f3;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .identity-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  
+  .identity-content {
+    width: 43%;
+    padding-right: 80px; /* Maintain right padding */
+  }
+  
+  .subsection-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #2e2e6a;
+  }
+  
+  .identity-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4e4e8a;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-orange {
+    color: #f29c1f;
+    font-weight: 600;
+  }
+  
+  .highlight-blue {
+    color: #2e2e6a;
+    font-weight: 700;
+  }
+
+
+  .identity-top-right-line {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 50px;
+    height: 5px;
+    background-color: #3a3485; 
+  }
+
+
+
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .our-identity {
+      padding: 50px 40px 50px 0;
+    }
+    
+    .section-title {
+      padding-left: 40px;
+    }
+    
+    .identity-image {
+      margin-left: -40px;
+    }
+    
+    .identity-content {
+      padding-right: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .our-identity {
+      padding: 40px 20px;
+    }
+    
+    .section-title {
+      padding-left: 0;
+    }
+    
+    .identity-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .identity-image {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .identity-content {
+      width: 100%;
+      padding-right: 0;
+    }
+  }

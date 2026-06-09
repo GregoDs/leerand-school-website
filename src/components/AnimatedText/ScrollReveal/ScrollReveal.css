@@ -1,0 +1,31 @@
+.scroll-reveal {
+    margin: 40px 0 32px 0;
+    text-align: center;
+    font-family: "Big Caslon FB", serif;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 0.01em;
+  color: #181c28;
+  line-height: 1.4;
+  }
+  
+  .scroll-reveal-text {
+    font-family: "Big Caslon FB", serif;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    letter-spacing: 0.01em;
+    color: #181c28;
+    line-height: 1.4;
+  }
+  
+  .word {
+    display: inline-block;
+    margin: 0 0.15em;
+    white-space: pre;
+  }

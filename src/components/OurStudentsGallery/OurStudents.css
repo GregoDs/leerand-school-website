@@ -1,0 +1,104 @@
+.our-students-container {
+    position: relative;
+    padding: 100px ;
+    min-height: 70vh;
+
+  }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 80px;
+    
+  }
+  
+  .student-image {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .student-image.circle {
+    border-radius: 50%;
+  
+  }
+  
+  .student-image.square {
+    border-radius: 10px;
+  }
+  
+  .student-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover-message {
+    position: fixed;
+    right: 30px;
+    bottom: -100px;
+    background: white;
+    padding: 38px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: bottom 0.4s ease, opacity 0.3s;
+    opacity: 0;
+    z-index: 1000;
+  }
+  
+  .hover-message.visible {
+    bottom: 30px;
+    opacity: 1;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .students-points-divider {
+    width: 1px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* margin-top: 1px; */
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .students-points-divider.middle {
+    top: unset;
+    bottom: 0;
+    
+  }
+  
+  .students-points-divider.top {
+    margin-top: 0px;
+   
+  }
+  
+  .student-image.large {
+    width: 180px;
+    height: 180px;
+  }
+  .student-image.medium {
+    width: 180px;
+    height: 180px;
+  }
+  .student-image.tall {
+    width: 190px;
+    height: 300px;
+  }
+  .student-image.wide {
+    width: 260px;
+    height: 170px;
+  }
+
+

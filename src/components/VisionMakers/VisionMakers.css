@@ -1,0 +1,234 @@
+.vision-makers-section {
+  background-color: rgb(24, 28, 41); /* Dark navy background */
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 0;
+}
+
+.vision-makers-divider-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 120px;
+  background: #fff;
+  opacity: 0.7;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.vision-makers-horizontal-line {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 90%;
+  height: 1px;
+  background: #fff;
+  opacity: 0.7;
+  z-index: 1;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.vision-makers-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 80px 4vw 0 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 3;
+}
+
+.vision-makers-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #fff;
+  margin-bottom: 48px;
+  margin-top: 62px;
+  text-transform: uppercase;
+}
+
+.vision-makers-layout {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.vision-makers-content {
+  max-width: 900px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+ 
+.vision-makers-content p {
+  font-family: "Big Caslon FB", serif;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-size: 3.0rem;
+  line-height: 1.18;
+  font-weight: 400;
+  margin: 0 0 32px 0;
+  max-width: 1100px;
+  text-align: left;
+  opacity: 1;
+  clip-path: inset(0 0% 0 0);
+  transition: opacity 0.5s, clip-path 0.5s;
+}
+
+.vision-makers-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 12px;
+  margin-right: 640px;
+  
+}
+
+.vision-makers-cta-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.80rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vision-makers-cta-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.vision-makers-cta-arrow {
+  display: flex;
+  align-items: center;
+}
+
+
+.vision-makers-layout {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.vision-makers-text-side {
+  max-width: 700px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.vision-makers-text-side p {
+  text-align: right;
+}
+
+.split-line {
+  display: block;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .vision-makers-section {
+    background: #181c28;
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
+  .vision-makers-inner {
+    padding: 60px 6vw 0 6vw;
+  }
+
+  .vision-makers-header {
+    font-size: 0.95rem;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .vision-makers-layout {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .vision-makers-content {
+    max-width: 100%;
+    align-items: left;
+  }
+
+  .vision-makers-content p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .vision-makers-cta-row {
+    margin-top: 20px;
+    margin-right: 0;
+    gap: 16px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-makers-cta-label {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .vision-makers-divider-top {
+    height: 80px;
+  }
+
+  .vision-makers-horizontal-line {
+    top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 96%;
+  }
+
+  .vision-makers-content p span {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .vision-makers-layout {
+    justify-content: left;
+  }
+
+  .vision-makers-text-side {
+    align-items: left;
+    text-align: left;
+  }
+
+  .vision-makers-text-side p {
+    text-align: left;
+    font-size: clamp(1.5rem, 5vw, 3.2rem);
+
+  }
+}

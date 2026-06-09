@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'BigCaslonFB';
+  src: url('../../assets/fonts/BigCaslon.ttf') format('truetype');
+}
+
+/* ─────────────────────────────────────────────
+   Section shell
+───────────────────────────────────────────── */
+.testimonial-section {
+  position: relative;
+  width: 100%;
+  min-height: 72vh;
+  padding: 72px 48px;
+  background:
+    linear-gradient(90deg, rgba(57, 49, 133, 0.18) 0 1px, transparent 1px),
+    #181c28;
+  background-size: 25% 100%;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+/* ─────────────────────────────────────────────
+   Two-column grid
+───────────────────────────────────────────── */
+.testimonial-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 40px;
+  align-items: center;          /* vertically centre both panels */
+  width: min(100%, 1160px);
+  margin: 0 auto;
+}
+
+/* ─────────────────────────────────────────────
+   Copy panel
+───────────────────────────────────────────── */
+.testimonial-copy-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 0;
+}
+
+/* Eyebrow label */
+.testimonial-label {
+  margin-bottom: 18px;
+  color: #f5a623;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* Main quote — significantly reduced from 76px max */
+.testimonial-quote {
+  max-width: 640px;
+  margin: 0;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(28px, 3.4vw, 48px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+/* ─────────────────────────────────────────────
+   Footer: profile + nav
+───────────────────────────────────────────── */
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 640px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Profile row */
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Profile image — base size */
+.profile-img {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(245, 166, 35, 0.55);
+  object-fit: cover;
+  object-position: center top;
+  background: #23263a;
+  flex-shrink: 0;
+}
+
+/* Per-slide profile avatar size variants */
+.profile-size-sm .profile-img  { width: 40px; height: 40px; }
+.profile-size-md .profile-img  { width: 46px; height: 46px; }
+.profile-size-lg .profile-img  { width: 52px; height: 52px; }
+
+.profile-text {
+  display: grid;
+  gap: 4px;
+}
+
+.profile-text strong {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.profile-text span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Nav arrows */
+.testimonial-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial-nav-btn {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.22s ease;
+}
+
+.testimonial-nav-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ─────────────────────────────────────────────
+   Portrait panel — varied heights per slide
+───────────────────────────────────────────── */
+.testimonial-portrait-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(245, 166, 35, 0.38);
+  background: #10131c;
+  /* height set by size modifier below */
+}
+
+/* Four distinct portrait heights */
+.portrait-tall    { height: 520px; }   /* Emilia   — full editorial */
+.portrait-medium  { height: 400px; }   /* Anthony  — balanced       */
+.portrait-compact { height: 300px; }   /* Samuel   — tight crop     */
+.portrait-wide    { height: 460px; }   /* Aisha    — generous       */
+
+.testimonial-portrait {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(0.92) contrast(1.05);
+}
+
+/* Gradient overlay */
+.testimonial-portrait-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(16, 19, 28, 0.82), transparent 44%),
+    linear-gradient(to right, rgba(57, 49, 133, 0.26), transparent 48%);
+  pointer-events: none;
+}
+
+/* Name card at portrait bottom */
+.testimonial-portrait-card {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.testimonial-portrait-card span {
+  color: #f5a623;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.testimonial-portrait-card strong {
+  color: #ffffff;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: right;
+}
+
+/* ─────────────────────────────────────────────
+   Centre rails
+───────────────────────────────────────────── */
+.testimonial-rail {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.72);
+  transform: translateX(-50%);
+}
+
+.testimonial-rail-top    { top: 0;    height: 68px; }
+.testimonial-rail-bottom { bottom: 0; height: 68px; }
+
+/* ─────────────────────────────────────────────
+   Responsive
+───────────────────────────────────────────── */
+@media (max-width: 980px) {
+  .testimonial-section {
+    padding: 64px 28px;
+    background-size: 50% 100%;
+  }
+
+  .testimonial-shell {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .testimonial-copy-panel {
+    padding: 20px 0 0;
+  }
+
+  /* Flatten all portrait heights on tablet */
+  .portrait-tall,
+  .portrait-medium,
+  .portrait-compact,
+  .portrait-wide {
+    height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonial-section {
+    min-height: auto;
+    padding: 56px 18px;
+  }
+
+  .testimonial-label {
+    margin-bottom: 16px;
+  }
+
+  .testimonial-quote {
+    font-size: clamp(24px, 8vw, 36px);
+  }
+
+  .testimonial-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 26px;
+  }
+
+  .portrait-tall,
+  .portrait-medium,
+  .portrait-compact,
+  .portrait-wide {
+    height: 300px;
+  }
+
+  .testimonial-portrait-card strong {
+    font-size: 18px;
+  }
+
+  .profile-size-sm .profile-img,
+  .profile-size-md .profile-img,
+  .profile-size-lg .profile-img {
+    width: 40px;
+    height: 40px;
+  }
+}

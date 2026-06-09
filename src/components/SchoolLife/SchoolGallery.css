@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'BigCaslonFB';
+  src: url('../../assets/fonts/BigCaslon.ttf') format('truetype');
+}
+
+.school-gallery-section {
+  position: relative;
+  width: 100%;
+  padding: 110px 20px 170px;
+  overflow: hidden;
+  background: #ffffff;
+  color: #181c28;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.school-gallery-bottom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 96px;
+  background: #181c28;
+  opacity: 0.78;
+  transform: translateX(-50%);
+}
+
+.school-gallery-intro {
+  width: min(100%, 980px);
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.school-gallery-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: #a87918;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.school-gallery-title {
+  margin: 0;
+  color: #352f7a;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.school-gallery-copy {
+  max-width: 720px;
+  margin: 23px auto 0;
+  color: #606777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.school-gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.school-gallery-filters button {
+  min-width: 104px;
+  min-height: 38px;
+  padding: 0 18px;
+  border: 1px solid #ddd9cf;
+  border-radius: 0;
+  background: #ffffff;
+  color: #686e7c;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.school-gallery-filters button:hover,
+.school-gallery-filters button:focus-visible,
+.school-gallery-filters .school-gallery-filter-active {
+  border-color: #352f7a;
+  background: #352f7a;
+  color: #edc64b;
+  outline: none;
+}
+
+.school-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 165px;
+  grid-auto-flow: dense;
+  gap: 11px;
+  width: min(100%, 1280px);
+  margin: 0 auto;
+}
+
+.school-gallery-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #352f7a;
+  outline: none;
+}
+
+.school-gallery-card--wide {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.school-gallery-card--tall {
+  grid-row: span 3;
+}
+
+.school-gallery-card--standard {
+  grid-row: span 2;
+}
+
+.school-gallery-card--small {
+  grid-row: span 1;
+}
+
+.school-gallery-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.75s cubic-bezier(.77, 0, .18, 1);
+}
+
+.school-gallery-card:nth-child(2) .school-gallery-img,
+.school-gallery-card:nth-child(4) .school-gallery-img {
+  object-position: center top;
+}
+
+.school-gallery-card:hover .school-gallery-img,
+.school-gallery-card:focus-visible .school-gallery-img {
+  transform: scale(1.055);
+}
+
+.school-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(18, 16, 50, 0.92) 0%, rgba(18, 16, 50, 0.3) 54%, transparent 78%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.school-gallery-card:hover .school-gallery-overlay,
+.school-gallery-card:focus-visible .school-gallery-overlay {
+  opacity: 1;
+}
+
+.school-gallery-number {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  color: #edc64b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.school-gallery-card-copy {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  left: 20px;
+  z-index: 2;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.school-gallery-card:hover .school-gallery-number,
+.school-gallery-card:focus-visible .school-gallery-number,
+.school-gallery-card:hover .school-gallery-card-copy,
+.school-gallery-card:focus-visible .school-gallery-card-copy {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.school-gallery-card-copy > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #edc64b;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.school-gallery-card-copy h3 {
+  margin: 0 0 7px;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(1.35rem, 2.2vw, 2.15rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.school-gallery-card-copy p {
+  max-width: 380px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.school-gallery-card--small .school-gallery-card-copy p {
+  display: none;
+}
+
+.school-gallery-card--small .school-gallery-card-copy h3 {
+  font-size: 1.25rem;
+}
+
+.school-gallery-grid:not(.school-gallery-grid--all) .school-gallery-card {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.school-gallery-grid:not(.school-gallery-grid--all) .school-gallery-card:first-child {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+@media (max-width: 980px) {
+  .school-gallery-section {
+    padding: 94px 18px 142px;
+  }
+
+  .school-gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 155px;
+  }
+}
+
+@media (max-width: 680px) {
+  .school-gallery-section {
+    padding: 76px 12px 124px;
+  }
+
+  .school-gallery-intro {
+    margin-bottom: 34px;
+    text-align: left;
+  }
+
+  .school-gallery-copy {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .school-gallery-filters {
+    justify-content: flex-start;
+    gap: 6px;
+    margin-top: 24px;
+  }
+
+  .school-gallery-filters button {
+    min-width: auto;
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 7px;
+  }
+
+  .school-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 135px;
+    gap: 7px;
+  }
+
+  .school-gallery-card--wide {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .school-gallery-card--tall,
+  .school-gallery-card--standard {
+    grid-row: span 2;
+  }
+
+  .school-gallery-grid:not(.school-gallery-grid--all) .school-gallery-card {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .school-gallery-grid:not(.school-gallery-grid--all) .school-gallery-card:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .school-gallery-number {
+    top: 11px;
+    left: 11px;
+  }
+
+  .school-gallery-card-copy {
+    right: 13px;
+    bottom: 12px;
+    left: 13px;
+  }
+
+  .school-gallery-card-copy p {
+    display: none;
+  }
+
+  .school-gallery-card-copy h3 {
+    font-size: 1.25rem;
+  }
+
+  .school-gallery-bottom-divider {
+    height: 72px;
+  }
+}

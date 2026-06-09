@@ -1,0 +1,448 @@
+/* ============================================================
+   AdmissionEnquiry.css  –  Leerand School
+   Palette : #ffffff bg · #181c28 ink · #F5C518 gold
+   Font    : Montserrat (body/form) + BigCaslonFB (display)
+   ============================================================ */
+
+   @font-face {
+    font-family: 'BigCaslonFB';
+    src: url('../../../assets/fonts/BigCaslon.ttf') format('truetype');
+  }
+  
+  /* ---- Section shell ---- */
+  .enquiry-section {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 0 0 100px 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* ---- Vertical dividers ---- */
+  .enquiry-divider {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background: #181c28;
+    z-index: 3;
+    opacity: 0.85;
+  }
+  .enquiry-divider-top    { top: 0;    height: 90px; }
+  .enquiry-divider-bottom { bottom: 0; height: 60px; }
+  
+  /* ---- Header (reuses entry-header classes) ---- */
+  .enquiry-header {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  /* ---- Body: info panel + form side by side ---- */
+  .enquiry-body {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    align-items: start;
+  }
+  
+  /* ---- Info panel ---- */
+  .enquiry-info-panel {
+    background: #181c28;
+    color: #fff;
+    padding: 48px 36px 48px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .info-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+  
+  .info-block:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .info-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(245, 197, 24, 0.12);
+    border: 1px solid rgba(245, 197, 24, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #F5C518;
+  }
+  
+  .info-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F5C518;
+    margin-bottom: 5px;
+  }
+  
+  .info-value {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #d8dbe6;
+    line-height: 1.5;
+  }
+  
+  /* gold accent bar at bottom of info panel */
+  .info-accent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #F5C518;
+  }
+  
+  /* ---- Form wrapper ---- */
+  .enquiry-form-wrap {
+    padding-top: 4px;
+  }
+  
+  .enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  /* ---- Two-column row inside form ---- */
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 36px;
+  }
+  
+  /* ---- Individual field group ---- */
+  .form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group--full {
+    margin-bottom: 36px;
+  }
+  
+  .form-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #181c28;
+    transition: color 0.2s;
+  }
+  
+  .required {
+    color: #F5C518;
+  }
+  
+  /* ---- Input / Select / Textarea base ---- */
+  .form-input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #181c28;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #d0d3dc;
+    padding: 10px 0 10px 0;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.25s;
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .form-input::placeholder {
+    color: #aaaaaa;
+    font-weight: 300;
+  }
+  
+  .form-input:focus {
+    border-bottom-color: transparent; /* line takes over */
+  }
+  
+  /* animated gold underline */
+  .form-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #F5C518;
+    transition: width 0.35s cubic-bezier(.77, 0, .18, 1);
+    pointer-events: none;
+  }
+  
+  .form-group:focus-within .form-line {
+    width: 100%;
+  }
+  
+  /* ---- Select specifics ---- */
+  .form-group--select {
+    position: relative;
+  }
+  
+  .form-select {
+    cursor: pointer;
+    padding-right: 24px;
+    color: #181c28;
+  }
+  
+  .form-select option[value=""] {
+    color: #aaaaaa;
+  }
+  
+  .select-chevron {
+    position: absolute;
+    right: 4px;
+    bottom: 14px;
+    pointer-events: none;
+  }
+  
+  /* ---- Textarea ---- */
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding-top: 12px;
+    line-height: 1.7;
+  }
+  
+  /* ---- Footer row: note + submit button ---- */
+  .form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .form-note {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+  }
+
+  .form-error-message {
+    margin-bottom: 28px;
+    padding: 14px 18px;
+    border: 1px solid rgba(245, 197, 24, 0.35);
+    background: rgba(245, 197, 24, 0.08);
+    color: #181c28;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  
+  .enquiry-submit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #181c28;
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s, transform 0.2s;
+  }
+  
+  .enquiry-submit svg {
+    fill: #ffffff;
+    transition: fill 0.25s, transform 0.25s;
+  }
+  
+  .enquiry-submit:hover {
+    background: #F5C518;
+    color: #181c28;
+  }
+  
+  .enquiry-submit:hover svg {
+    fill: #181c28;
+    transform: translateX(4px);
+  }
+  
+  /* ---- Success state ---- */
+  .enquiry-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 16px;
+    border: 1px solid #e8e8e8;
+  }
+  
+  .success-icon {
+    width: 72px;
+    height: 72px;
+    border: 1.5px solid #F5C518;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  
+  .success-title {
+    font-family: 'BigCaslonFB', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #181c28;
+    margin: 0;
+  }
+  
+  .success-msg {
+    font-size: 14px;
+    font-weight: 300;
+    color: #6b7080;
+    line-height: 1.75;
+    max-width: 380px;
+    margin: 0;
+  }
+  
+  /* ---- Scroll animation ---- */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.8s cubic-bezier(.77, 0, .18, 1),
+                transform 0.8s cubic-bezier(.77, 0, .18, 1);
+  }
+  
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  /* ============================================================
+     TABLET  (901px – 1100px)
+     ============================================================ */
+  @media (min-width: 901px) and (max-width: 1100px) {
+    .enquiry-body {
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 0 28px;
+    }
+  }
+  
+  
+  /* ============================================================
+     MOBILE  (≤ 900px)
+     ============================================================ */
+  @media (max-width: 900px) {
+    .enquiry-section {
+      padding-bottom: 80px;
+    }
+  
+    .enquiry-divider-top  { height: 60px; }
+    .enquiry-divider-bottom { height: 60px; }
+  
+    .enquiry-header {
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+  
+    /* Stack: form on top, info panel below */
+    .enquiry-body {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 0 20px;
+    }
+  
+    /* On mobile, show info panel AFTER the form */
+    .enquiry-info-panel { order: 2; }
+    .enquiry-form-wrap  { order: 1; }
+  
+    /* Info panel horizontal on mobile */
+    .enquiry-info-panel {
+      padding: 32px 24px 36px 24px;
+    }
+  
+    .info-block {
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+  
+    .info-icon {
+      width: 38px;
+      height: 38px;
+    }
+  
+    .info-value {
+      font-size: 13px;
+    }
+  
+    /* Form rows go single column on mobile */
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-bottom: 28px;
+    }
+  
+    .form-group--full {
+      margin-bottom: 28px;
+    }
+  
+    .form-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .enquiry-submit {
+      width: 100%;
+      justify-content: center;
+      padding: 16px 24px;
+    }
+  
+    .enquiry-success {
+      padding: 40px 20px;
+    }
+  }
+  
+  
+  /* ============================================================
+     SMALL MOBILE  (≤ 480px)
+     ============================================================ */
+  @media (max-width: 480px) {
+    .enquiry-body {
+      padding: 0 16px;
+    }
+  
+    .enquiry-header {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .success-title {
+      font-size: 1.5rem;
+    }
+  }

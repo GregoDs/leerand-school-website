@@ -1,0 +1,382 @@
+/* ===================== AboutUs.css ===================== */
+
+/* ---- DESKTOP ---- */
+.about-section {
+    background-color: #ffffff;
+    color: #181c28;
+    padding: 50px 0 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+  }
+  
+  .about-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 90vh;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+  }
+  
+  /* ---------- LEFT: Text col ---------- */
+  .about-content-col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+  }
+  
+  .about-content {
+    max-width: 520px;
+  }
+  
+  .about-eyebrow {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #F5C518;
+    margin-bottom: 16px;
+    margin-top: 60px;
+  }
+  
+  .about-title {
+    font-family: "Big Caslon FB", "Didot", "Bodoni MT", Georgia, serif;
+    font-size: 2.875rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #181c28;
+    margin-bottom: 28px;
+    margin-top: 0;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .about-body {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #4a4f63;
+    margin-bottom: 20px;
+  }
+  
+  /* ---------- Stats ---------- */
+  .about-stats {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 32px 0 36px 0;
+    padding: 24px 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .about-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+  
+  .about-stat-divider {
+    width: 1px;
+    height: 40px;
+    background: #d0d0d0;
+    margin: 0 24px;
+  }
+  
+  .stat-number {
+    font-family: "Big Caslon FB", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #181c28;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #888;
+  }
+  
+  /* ---------- Button row ---------- */
+  .about-btn-row {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .about-learn-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4a4f63;
+  }
+  
+  .about-arrow-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .about-arrow-btn:hover {
+    transform: translateX(4px);
+  }
+  
+  .about-arrow-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ---------- RIGHT: Image col ---------- */
+  .about-img-col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-img-wrap {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+  }
+  
+  .about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+  }
+  
+  /* Est. badge overlapping image bottom-left */
+  .about-img-badge {
+    position: absolute;
+    bottom: -18px;
+    left: -18px;
+    background: #181c28;
+    color: #fff;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+  }
+  
+  .badge-year {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F5C518;
+    margin-bottom: 4px;
+  }
+  
+  .badge-num {
+    font-family: "Big Caslon FB", Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  /* ---------- Dividers ---------- */
+  .about-divider {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    background: #181c28;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  
+  .about-divider-top {
+    top: 0;
+    height: 100px;
+  }
+  
+  .about-divider-bottom {
+    bottom: 0;
+    height: 60px;
+  }
+  
+  /* ---------- Scroll animations ---------- */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  /* ===================== MOBILE ===================== */
+  @media (max-width: 900px) {
+    .about-section {
+      padding: 2rem 1rem 3rem 1rem;
+      min-height: auto;
+    }
+  
+    .about-inner {
+      display: flex;
+      /* KEY: text first, image second on mobile */
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+      max-width: 100%;
+      padding: 0;
+      margin-top: 60px;
+      min-height: auto;
+    }
+  
+    /* Force text column to render FIRST on mobile */
+    .about-content-col {
+      order: 1;
+      width: 100%;
+      padding-right: 0;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  
+    /* Force image column to render SECOND on mobile */
+    .about-img-col {
+      order: 2;
+      width: 100%;
+      justify-content: center;
+      padding: 0 1rem;
+    }
+  
+    .about-content {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .about-eyebrow {
+      margin-top: 0;
+      text-align: center;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin-bottom: 1.25rem;
+    }
+  
+    .about-body {
+      font-size: 0.95rem;
+      text-align: left;
+    }
+  
+    .about-stats {
+      justify-content: center;
+      gap: 0;
+      margin: 24px 0 28px 0;
+      padding: 20px 0;
+    }
+  
+    .about-stat {
+      align-items: center;
+    }
+  
+    .stat-number {
+      font-size: 1.6rem;
+    }
+  
+    .stat-label {
+      font-size: 9px;
+      text-align: center;
+    }
+  
+    .about-btn-row {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .about-learn-label {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  
+    .about-img-wrap {
+      max-width: 90vw;
+      margin-bottom: 30px; /* space for badge overflow */
+    }
+  
+    .about-img-badge {
+      bottom: -14px;
+      left: -10px;
+      padding: 12px 16px;
+    }
+  
+    .badge-num {
+      font-size: 1.2rem;
+    }
+  
+    .about-divider-top {
+      height: 60px;
+    }
+  
+    .about-divider-bottom {
+      height: 60px;
+    }
+  }
+  
+  /* ===================== TABLET ===================== */
+  @media (min-width: 901px) and (max-width: 1024px) {
+    .about-inner {
+      flex-direction: column;
+      text-align: center;
+      min-height: auto;
+    }
+  
+    .about-content-col {
+      order: 1;
+      padding-right: 0;
+      margin-top: 40px;
+      width: 100%;
+      padding: 0 2rem;
+    }
+  
+    .about-img-col {
+      order: 2;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .about-content {
+      max-width: 100%;
+    }
+  
+    .about-eyebrow {
+      margin-top: 0;
+    }
+  
+    .about-stats {
+      justify-content: center;
+    }
+  
+    .about-stat {
+      align-items: center;
+    }
+  
+    .about-btn-row {
+      justify-content: center;
+    }
+  }

@@ -1,0 +1,74 @@
+.our-purpose-container {
+    padding: 2rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: #2d2d2d;
+  }
+  
+  .our-purpose-header {
+    margin-bottom: 5rem;
+  }
+  
+  .our-purpose-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #c62828; /* red color like in the image */
+  }
+  
+  .our-purpose-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 3rem;
+
+  }
+  
+  .image-container {
+    flex: 1;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fefae0;
+  }
+  
+  .purpose-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  .text-container {
+    flex: 1; /* Ensures the text takes up equal space */
+    text-align: left;
+    max-width: 600px;
+    margin-top: 150px; /* Pushes the text slightly downward */
+  }
+  
+  .section-heading {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #322f7d; /* dark purple */
+    margin-bottom: 2.5rem;
+    
+    
+  }
+  
+  .mission-paragraph,
+  .mission-subtext {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .mission-title {
+    color: #f28c28;
+    font-weight: 700;
+  }
+  
+  .bold-purple {
+    color: #2e2f7e;
+    font-weight: 700;
+  }

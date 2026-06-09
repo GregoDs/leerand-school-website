@@ -1,0 +1,396 @@
+@font-face {
+  font-family: 'BigCaslonFB';
+  src: url('../../assets/fonts/BigCaslon.ttf') format('truetype');
+}
+
+.sport-premium-section {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #181c28;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sport-premium-hero {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  overflow: hidden;
+  background: #181c28;
+}
+
+.sport-premium-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.sport-premium-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(15, 17, 29, 0.92) 0%, rgba(15, 17, 29, 0.55) 48%, rgba(15, 17, 29, 0.08) 78%),
+    linear-gradient(to top, rgba(15, 17, 29, 0.62), transparent 55%);
+}
+
+.sport-premium-hero-copy {
+  position: absolute;
+  top: 50%;
+  left: max(28px, calc((100% - 1180px) / 2));
+  z-index: 2;
+  width: min(560px, calc(100% - 56px));
+  color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.sport-premium-hero-copy > span,
+.sport-premium-eyebrow,
+.sport-premium-roster-label {
+  display: block;
+  margin-bottom: 15px;
+  color: #edc64b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.sport-premium-hero-copy h2 {
+  margin: 0 0 22px;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(3.4rem, 6.4vw, 6.7rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0;
+}
+
+.sport-premium-hero-copy p {
+  max-width: 490px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.sport-premium-scoreline {
+  position: absolute;
+  right: max(28px, calc((100% - 1180px) / 2));
+  bottom: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  min-width: 430px;
+  background: #352f7a;
+}
+
+.sport-premium-scoreline div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 22px 25px;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.sport-premium-scoreline div:last-child {
+  border-right: 0;
+}
+
+.sport-premium-scoreline strong {
+  color: #edc64b;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.sport-premium-scoreline span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.sport-premium-body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
+  gap: 74px;
+  width: min(100% - 80px, 1180px);
+  margin: 0 auto;
+  padding: 100px 0 120px;
+}
+
+.sport-premium-intro {
+  align-self: center;
+}
+
+.sport-premium-intro h3 {
+  margin: 0 0 22px;
+  color: #352f7a;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(2.6rem, 4.7vw, 4.8rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.sport-premium-intro p {
+  margin: 0;
+  color: #656c7b;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.sport-enrol-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 230px;
+  min-height: 54px;
+  margin-top: 32px;
+  padding: 0 30px;
+  border: 1px solid #edc64b;
+  border-radius: 999px;
+  background: #edc64b;
+  color: #181c28;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.sport-enrol-button:hover,
+.sport-enrol-button:focus-visible {
+  transform: translateY(-2px);
+  background: #352f7a;
+  color: #edc64b;
+  outline: none;
+}
+
+.sport-premium-image-pair {
+  position: relative;
+  min-height: 540px;
+}
+
+.sport-premium-image {
+  position: absolute;
+  overflow: hidden;
+  background: #352f7a;
+}
+
+.sport-premium-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(.77, 0, .18, 1);
+}
+
+.sport-premium-image:hover img {
+  transform: scale(1.04);
+}
+
+.sport-premium-image-main {
+  inset: 0 95px 48px 0;
+}
+
+.sport-premium-image-small {
+  right: 0;
+  bottom: 0;
+  width: 245px;
+  height: 285px;
+  border: 10px solid #ffffff;
+}
+
+.sport-premium-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column: 1 / -1;
+  margin-top: 16px;
+  border-top: 1px solid #dedbd2;
+  border-left: 1px solid #dedbd2;
+}
+
+.sport-premium-principle {
+  min-height: 230px;
+  padding: 28px 26px;
+  border-right: 1px solid #dedbd2;
+  border-bottom: 1px solid #dedbd2;
+  background: #fbfaf7;
+}
+
+.sport-premium-principle > span {
+  color: #a87918;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.sport-premium-principle h4 {
+  margin: 38px 0 13px;
+  color: #352f7a;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.sport-premium-principle p {
+  margin: 0;
+  color: #697080;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.sport-premium-roster {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  align-items: center;
+  grid-column: 1 / -1;
+  gap: 30px;
+  padding: 26px 30px;
+  background: #352f7a;
+}
+
+.sport-premium-roster-label {
+  margin: 0;
+}
+
+.sport-premium-roster-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.sport-premium-roster-list span {
+  padding: 8px 12px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.sport-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s cubic-bezier(.77, 0, .18, 1);
+}
+
+.sport-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sport-premium-hero-copy.sport-reveal {
+  transform: translateY(calc(-50% + 28px));
+}
+
+.sport-premium-hero-copy.sport-reveal.is-visible {
+  transform: translateY(-50%);
+}
+
+@media (max-width: 980px) {
+  .sport-premium-hero {
+    min-height: 620px;
+  }
+
+  .sport-premium-scoreline {
+    right: 20px;
+    left: 20px;
+    min-width: 0;
+  }
+
+  .sport-premium-body {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    width: min(100% - 48px, 760px);
+    padding: 82px 0 96px;
+  }
+
+  .sport-premium-intro {
+    max-width: 650px;
+  }
+
+  .sport-premium-image-pair {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 680px) {
+  .sport-premium-hero {
+    min-height: 580px;
+  }
+
+  .sport-premium-hero-copy {
+    top: 43%;
+    left: 18px;
+    width: calc(100% - 36px);
+  }
+
+  .sport-premium-hero-copy h2 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .sport-premium-scoreline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sport-premium-scoreline div {
+    padding: 16px 10px;
+  }
+
+  .sport-premium-scoreline strong {
+    font-size: 1.5rem;
+  }
+
+  .sport-premium-scoreline span {
+    font-size: 6px;
+  }
+
+  .sport-premium-body {
+    width: min(100% - 32px, 520px);
+    padding: 68px 0 78px;
+  }
+
+  .sport-enrol-button {
+    width: 100%;
+  }
+
+  .sport-premium-image-pair {
+    min-height: 380px;
+  }
+
+  .sport-premium-image-main {
+    inset: 0 40px 35px 0;
+  }
+
+  .sport-premium-image-small {
+    width: 150px;
+    height: 185px;
+    border-width: 6px;
+  }
+
+  .sport-premium-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .sport-premium-principle {
+    min-height: auto;
+  }
+
+  .sport-premium-roster {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 23px 20px;
+  }
+}

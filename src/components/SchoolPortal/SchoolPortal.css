@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'BigCaslonFB';
+  src: url('../../assets/fonts/BigCaslon.ttf') format('truetype');
+}
+
+.school-portal-page {
+  width: 100%;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.school-portal-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+  overflow: hidden;
+  background: #181c28;
+}
+
+.school-portal-hero-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.school-portal-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.34)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.34), transparent 48%);
+}
+
+.school-portal-hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 24px;
+}
+
+.school-portal-hero-title {
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #ffffff;
+  margin: 0 0 20px;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.school-portal-hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ffffff;
+  opacity: 0.92;
+  margin: 0;
+  max-width: 650px;
+}
+
+.school-portal-hero-divider {
+  width: 1px;
+  height: 180px;
+  margin-top: 0;
+  background: #ffffff;
+}
+
+.portal-intro-section {
+  position: relative;
+  width: 100%;
+  background:
+    linear-gradient(90deg, rgba(245, 197, 24, 0.08) 0 1px, transparent 1px 100%),
+    linear-gradient(0deg, rgba(53, 47, 122, 0.06) 0 1px, transparent 1px 100%),
+    #ffffff;
+  background-size: 28px 28px;
+  padding: 0 28px 96px;
+  font-family: 'Montserrat', sans-serif;
+  color: #181c28;
+}
+
+.portal-intro-line {
+  width: 1px;
+  height: 92px;
+  margin: 0 auto 56px;
+  background: #181c28;
+  opacity: 0.75;
+}
+
+.portal-intro-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(320px, 1.04fr);
+  gap: 64px;
+  align-items: center;
+  width: min(100%, 1180px);
+  margin: 0 auto;
+}
+
+.portal-intro-copy {
+  max-width: 540px;
+}
+
+.portal-intro-eyebrow {
+  display: block;
+  margin-bottom: 16px;
+  color: #f5a400;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.portal-intro-title {
+  margin: 0 0 22px;
+  color: #181c28;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.9rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.portal-intro-text {
+  margin: 0;
+  color: #5d6270;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.portal-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 34px;
+  min-width: 310px;
+  min-height: 58px;
+  padding: 18px 44px;
+  color: #181c28;
+  background: #edc64b;
+  border: 1px solid #edc64b;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.portal-login-button:hover,
+.portal-login-button:focus-visible {
+  transform: translateY(-2px);
+  background: #f5d15a;
+  border-color: #f5d15a;
+  box-shadow: 0 12px 28px rgba(237, 198, 75, 0.28);
+  outline: none;
+}
+
+.portal-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.portal-feature-card {
+  min-height: 280px;
+  padding: 26px 22px;
+  border: 1px solid rgba(24, 28, 40, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 50px rgba(24, 28, 40, 0.08);
+}
+
+.portal-feature-card:nth-child(1) {
+  border-top: 6px solid #f5c518;
+}
+
+.portal-feature-card:nth-child(2) {
+  border-top: 6px solid #8cc9d8;
+}
+
+.portal-feature-card:nth-child(3) {
+  border-top: 6px solid #f09a8b;
+}
+
+.portal-feature-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 28px;
+  background: #f7f3de;
+  color: #352f7a;
+  border: 1px solid rgba(53, 47, 122, 0.12);
+  border-radius: 8px;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.portal-feature-card h3 {
+  margin: 0 0 12px;
+  color: #181c28;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.portal-feature-card p {
+  margin: 0;
+  color: #636978;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .school-portal-hero {
+    min-height: 560px;
+  }
+
+  .school-portal-hero-subtitle br {
+    display: none;
+  }
+
+  .school-portal-hero-divider {
+    height: 140px;
+  }
+}
+
+@media (max-width: 980px) {
+  .portal-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .portal-intro-copy {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 720px) {
+  .portal-intro-section {
+    padding: 0 18px 72px;
+    background-size: 22px 22px;
+  }
+
+  .portal-intro-line {
+    height: 74px;
+    margin-bottom: 42px;
+  }
+
+  .portal-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-feature-card {
+    min-height: auto;
+  }
+
+  .portal-login-button {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: center;
+  }
+}

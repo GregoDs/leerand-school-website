@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'BigCaslonFB';
+  src: url('../../assets/fonts/BigCaslon.ttf') format('truetype');
+}
+
+.school-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  height: 100dvh;
+  overflow-y: auto;
+  pointer-events: auto;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 100%),
+    #24205b;
+  background-size: 32px 32px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.school-menu-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 92px;
+  padding: 14px 34px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(36, 32, 91, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.school-menu-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.school-menu-brand img {
+  width: auto;
+  height: 62px;
+  object-fit: contain;
+}
+
+.school-menu-brand span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.school-menu-brand strong {
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.school-menu-brand small,
+.school-menu-kicker,
+.school-menu-welcome > span,
+.school-menu-contact > span {
+  color: #edc64b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.school-menu-close {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.school-menu-close svg {
+  width: 19px;
+  height: 19px;
+}
+
+.school-menu-close:hover,
+.school-menu-close:focus-visible {
+  background: #edc64b;
+  color: #181c28;
+  outline: none;
+}
+
+.school-menu-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
+  min-height: 0;
+}
+
+.school-menu-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 52px clamp(28px, 6vw, 100px);
+}
+
+.school-menu-kicker {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.school-menu-link {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 28px;
+  gap: 18px;
+  align-items: center;
+  padding: 15px 0;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.school-menu-link:hover,
+.school-menu-link:focus-visible,
+.school-menu-link-active {
+  padding-left: 10px;
+  color: #edc64b;
+  outline: none;
+}
+
+.school-menu-link-number {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.school-menu-link-copy {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.school-menu-link-copy strong {
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.school-menu-link-copy small {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.school-menu-link-arrow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.school-menu-link-arrow svg,
+.school-menu-action svg {
+  width: 19px;
+  height: 14px;
+}
+
+.school-menu-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 54px clamp(26px, 4vw, 62px);
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  background: #ffffff;
+  color: #181c28;
+}
+
+.school-menu-welcome h2 {
+  margin: 15px 0 18px;
+  color: #352f7a;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.school-menu-welcome p {
+  margin: 0;
+  color: #686e7c;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.school-menu-actions {
+  display: grid;
+  margin: 32px 0;
+  border-top: 1px solid #dedce8;
+}
+
+.school-menu-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px 0;
+  color: #181c28;
+  border-bottom: 1px solid #dedce8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.school-menu-action:hover,
+.school-menu-action:focus-visible {
+  padding-left: 8px;
+  color: #a87918;
+  outline: none;
+}
+
+.school-menu-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 20px;
+  background: #f5f3e9;
+  border-left: 5px solid #edc64b;
+}
+
+.school-menu-contact a {
+  color: #352f7a;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.school-menu-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 34px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .school-menu-header {
+    min-height: 72px;
+    padding: 10px 16px;
+  }
+
+  .school-menu-brand img {
+    height: 45px;
+  }
+
+  .school-menu-brand strong {
+    font-size: 1.1rem;
+  }
+
+  .school-menu-brand small,
+  .school-menu-close span {
+    display: none;
+  }
+
+  .school-menu-close {
+    padding: 9px;
+  }
+
+  .school-menu-body {
+    display: block;
+  }
+
+  .school-menu-navigation {
+    justify-content: flex-start;
+    padding: 34px 20px 42px;
+  }
+
+  .school-menu-link {
+    grid-template-columns: 28px minmax(0, 1fr) 22px;
+    gap: 10px;
+    padding: 14px 0;
+  }
+
+  .school-menu-link-copy {
+    display: block;
+  }
+
+  .school-menu-link-copy strong {
+    display: block;
+    font-size: clamp(1.8rem, 10vw, 2.7rem);
+  }
+
+  .school-menu-link-copy small {
+    display: block;
+    margin-top: 5px;
+    font-size: 8px;
+    text-align: left;
+  }
+
+  .school-menu-aside {
+    padding: 38px 20px 44px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-left: 0;
+  }
+
+  .school-menu-footer {
+    padding: 13px 16px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .school-menu-brand span {
+    display: none;
+  }
+
+  .school-menu-footer {
+    display: none;
+  }
+}

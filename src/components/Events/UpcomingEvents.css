@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'BigCaslonFB';
+  src: url('../../assets/fonts/BigCaslon.ttf') format('truetype');
+}
+
+.events-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #f7f6f2;
+  color: #181c28;
+  padding: 120px 28px 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.events-inner {
+  width: min(100%, 1240px);
+  margin: 0 auto;
+}
+
+.events-heading {
+  max-width: 650px;
+  margin-bottom: 52px;
+}
+
+.events-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: #a87918;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.events-title {
+  margin: 0 0 16px;
+  color: #181c28;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.events-subtitle {
+  margin: 0;
+  color: #626879;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.events-layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.9fr) minmax(0, 1.35fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.calendar-panel {
+  padding: 30px;
+  background: #352f7a;
+  color: #ffffff;
+  border-top: 6px solid #edc64b;
+}
+
+.calendar-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calendar-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #edc64b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+}
+
+.calendar-top h3 {
+  margin: 0;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.calendar-count {
+  flex-shrink: 0;
+  padding: 8px 10px;
+  border: 1px solid rgba(237, 198, 75, 0.55);
+  color: #edc64b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.calendar-weekdays {
+  margin: 24px 0 12px;
+}
+
+.calendar-weekdays span {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.calendar-day-empty {
+  border-color: transparent;
+}
+
+.calendar-day-marked {
+  background: #edc64b;
+  border-color: #edc64b;
+  color: #181c28;
+  font-weight: 700;
+}
+
+.events-list {
+  display: grid;
+  gap: 15px;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  min-height: 145px;
+  background: #ffffff;
+  border: 1px solid #e1ded6;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(53, 47, 122, 0.35);
+  box-shadow: 0 18px 42px rgba(24, 28, 40, 0.09);
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #edc64b;
+  color: #181c28;
+  border-right: 1px solid #e1ded6;
+}
+
+.event-date span {
+  margin-bottom: 4px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.event-date strong {
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: 3.3rem;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.event-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 28px;
+}
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 22px;
+  margin-bottom: 11px;
+  color: #8d6c18;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.event-body h3 {
+  margin: 0 0 8px;
+  color: #181c28;
+  font-family: 'BigCaslonFB', 'Big Caslon FB', Georgia, serif;
+  font-size: clamp(1.65rem, 2.6vw, 2.4rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.event-body p {
+  margin: 0;
+  color: #737988;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.events-divider {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  background: #181c28;
+  transform: translateX(-50%);
+  opacity: 0.75;
+}
+
+.events-divider-top {
+  top: 0;
+  height: 72px;
+}
+
+.events-divider-bottom {
+  bottom: 0;
+  height: 90px;
+}
+
+@media (max-width: 950px) {
+  .events-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-panel {
+    width: min(100%, 620px);
+  }
+}
+
+@media (max-width: 600px) {
+  .events-section {
+    padding: 96px 16px 112px;
+  }
+
+  .events-heading {
+    margin-bottom: 34px;
+  }
+
+  .calendar-panel {
+    padding: 22px 16px;
+  }
+
+  .calendar-top h3 {
+    font-size: 1.9rem;
+  }
+
+  .calendar-count {
+    padding: 7px;
+    font-size: 8px;
+  }
+
+  .calendar-weekdays,
+  .calendar-grid {
+    gap: 4px;
+  }
+
+  .event-card {
+    grid-template-columns: 82px minmax(0, 1fr);
+    min-height: 135px;
+  }
+
+  .event-date strong {
+    font-size: 2.6rem;
+  }
+
+  .event-body {
+    padding: 20px 16px;
+  }
+
+  .event-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

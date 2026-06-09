@@ -1,0 +1,45 @@
+.director-message {
+  background:
+    linear-gradient(90deg, transparent calc(100% - 12px), #352f7a calc(100% - 12px)),
+    #181c29;
+}
+
+.director-message::after {
+  right: auto;
+  left: 8%;
+}
+
+.director-message-copy {
+  max-width: 610px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.director-message-copy p {
+  margin: 0;
+  color: #cfd2dd;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+.director-message-content h2 {
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  .director-message {
+    background:
+      linear-gradient(90deg, transparent calc(100% - 7px), #352f7a calc(100% - 7px)),
+      #181c29;
+  }
+
+  .director-message-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .director-message-copy {
+    padding-top: 24px;
+  }
+}
