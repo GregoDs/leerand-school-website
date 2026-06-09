@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import './OurStudents.css'
 
 const studentImages = [
-  { src: '/src/assets/OurStudents_img/Prep-VM-Moss-572x572.webp', shape: 'circle', size: 'large', name: 'Moss', message: 'Learning is an adventure!' },
-  { src: 'src/assets/OurStudents_img/Prep-VM-Alexa-572x1260.webp', shape: 'rectangle', size: 'tall', name: 'Alexa', message: 'Exploring the world!' },
-  { src: 'src/assets/OurStudents_img/Favour-572x572.webp', shape: 'rectangle', size: 'wide', name: 'Favour', message: 'Music brings us together.' },
-  { src: 'src/assets/OurStudents_img/Dan-572x1260.webp', shape: 'rectangle', size: 'tall', name: 'Dan', message: 'After desolation, let us rebuild hope.' },
-  { src: 'src/assets/OurStudents_img/Prep-VM-Charlie-1196x780.webp', shape: 'rectangle', size: 'wide', name: 'Charlie', message: 'Every day is a new chance.' },
-  { src: 'src/assets/OurStudents_img/Cosimo-e1699369656527-572x572.webp', shape: 'circle', size: 'medium', name: 'Cosimo', message: 'Nature inspires me.' },
-  { src: 'src/assets/OurStudents_img/Prep-VM-Skyela-572x1260.webp', shape: 'rectangle', size: 'tall', name: 'Skyela', message: 'Dream big, work hard.' },
-  { src: 'src/assets/OurStudents_img/Stan-572x572.webp', shape: 'circle', size: 'medium', name: 'Stan', message: 'Ready for the next challenge.' },
-  { src: 'src/assets/OurStudents_img/Vision-Maker-Astral-572x1260.webp', shape: 'rectangle', size: 'tall', name: 'Astral', message: 'Vision makes reality.' },
-  { src: 'src/assets/OurStudents_img/Xander-e1700568542597-572x572.webp', shape: 'circle', size: 'large', name: 'Xander', message: 'Stay curious.' },
+  { src: new URL('../../assets/OurStudents_img/Prep-VM-Moss-572x572.webp', import.meta.url).href, shape: 'circle', size: 'large', name: 'Moss', message: 'Learning is an adventure!' },
+  { src: new URL('../../assets/OurStudents_img/Prep-VM-Alexa-572x1260.webp', import.meta.url).href, shape: 'rectangle', size: 'tall', name: 'Alexa', message: 'Exploring the world!' },
+  { src: new URL('../../assets/OurStudents_img/Favour-572x572.webp', import.meta.url).href, shape: 'rectangle', size: 'wide', name: 'Favour', message: 'Music brings us together.' },
+  { src: new URL('../../assets/OurStudents_img/Dan-572x1260.webp', import.meta.url).href, shape: 'rectangle', size: 'tall', name: 'Dan', message: 'After desolation, let us rebuild hope.' },
+  { src: new URL('../../assets/OurStudents_img/Prep-VM-Charlie-1196x780.webp', import.meta.url).href, shape: 'rectangle', size: 'wide', name: 'Charlie', message: 'Every day is a new chance.' },
+  { src: new URL('../../assets/OurStudents_img/Cosimo-e1699369656527-572x572.webp', import.meta.url).href, shape: 'circle', size: 'medium', name: 'Cosimo', message: 'Nature inspires me.' },
+  { src: new URL('../../assets/OurStudents_img/Prep-VM-Skyela-572x1260.webp', import.meta.url).href, shape: 'rectangle', size: 'tall', name: 'Skyela', message: 'Dream big, work hard.' },
+  { src: new URL('../../assets/OurStudents_img/Stan-572x572.webp', import.meta.url).href, shape: 'circle', size: 'medium', name: 'Stan', message: 'Ready for the next challenge.' },
+  { src: new URL('../../assets/OurStudents_img/Vision-Maker-Astral-572x1260.webp', import.meta.url).href, shape: 'rectangle', size: 'tall', name: 'Astral', message: 'Vision makes reality.' },
+  { src: new URL('../../assets/OurStudents_img/Xander-e1700568542597-572x572.webp', import.meta.url).href, shape: 'circle', size: 'large', name: 'Xander', message: 'Stay curious.' },
 ]
 
 const OurStudents = () => {
