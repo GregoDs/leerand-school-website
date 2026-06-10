@@ -46,14 +46,14 @@ const entryPoints = [
     identity: 'Strong foundations for growing minds',
     traits: ['Core Skills', 'Curious Inquiry', 'Character'],
     focus: 'Core literacy, numeracy, inquiry-based learning, STEM foundations, creative projects and leadership skills.',
-    outcomes: 'Independent, well-rounded learners equipped with the academic and social tools for Junior Secondary.',
+    outcomes: 'Independent, well-rounded learners equipped with the academic and social tools for Junior School.',
   },
   {
-    title: 'Junior Secondary',
-    id: 'junior-secondary',
+    title: 'Junior School',
+    id: 'junior-school',
     ages: 'Grades 7–9',
     img: sixthForm,
-    link: '#junior-secondary',
+    link: '#junior-school',
     theme: 'junior',
     identity: 'Independence, challenge and direction',
     traits: ['Subject Depth', 'Leadership', 'Future Readiness'],
@@ -351,7 +351,7 @@ const ProgramsPage = () => {
           <h2 className="entry-title animate-on-scroll">Every Stage.<br />Every Learner.</h2>
           <p className="entry-subtitle animate-on-scroll">
             From a child's very first day in Kindergarten through to the rigour of
-            Junior Secondary, Leerand provides a seamlessly progressive academic
+            Junior School, Leerand provides a seamlessly progressive academic
             journey — built on curiosity, care and the highest standards of teaching.
           </p>
         </div>

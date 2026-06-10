@@ -75,7 +75,7 @@ const SportSection = () => {
           <p>
             We introduce strong movement foundations in the early years, build
             technical confidence through Primary, and encourage greater
-            independence, leadership and competition in Junior Secondary.
+            independence, leadership and competition in Junior School.
           </p>
 
           <Link to="/contacts" className="sport-enrol-button">

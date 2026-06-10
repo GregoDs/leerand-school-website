@@ -5,7 +5,7 @@ const schoolLevels = [
   { value: '', label: 'Select a school level' },
   { value: 'kindergarten', label: 'Kindergarten' },
   { value: 'primary', label: 'Primary' },
-  { value: 'junior-secondary', label: 'Junior Secondary' },
+  { value: 'junior-school', label: 'Junior School' },
 ];
 
 const contactCards = [
@@ -14,7 +14,7 @@ const contactCards = [
     lines: [
       { title: 'Kindergarten', value: '0722 429 165', href: 'tel:+254722429165' },
       { title: 'Primary', value: '0718 307 756', href: 'tel:+254718307756' },
-      { title: 'Junior Secondary', value: '0793 591 287', href: 'tel:+254793591287' },
+      { title: 'Junior School', value: '0793 591 287', href: 'tel:+254793591287' },
     ],
   },
   {

@@ -51,7 +51,7 @@ const HeadteacherMessage = () => (
           </p>
           <p>
             From a child&apos;s first discoveries in Kindergarten to the growing
-            independence of Junior Secondary, we create a school experience
+            independence of Junior School, we create a school experience
             where pupils feel known, challenged and inspired to contribute with
             purpose. Our promise is simple: every learner will be encouraged to
             aim high, think deeply and become a person of strong character.

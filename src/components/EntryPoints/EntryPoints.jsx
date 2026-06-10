@@ -10,7 +10,7 @@ import sixthForm from '../../assets/main_entry_points/396d9021a_637579955_155085
 const entryPoints = [
   { title: 'Kindergarten', stage: 'Ages 3–6', img: prepSchool, link: '/programs#kindergarten' },
   { title: 'Primary', stage: 'Grades 1–6', img: prePrep, link: '/programs#primary' },
-  { title: 'Junior Secondary', stage: 'Grades 7–9', img: sixthForm, link: '/programs#junior-secondary' },
+  { title: 'Junior School', stage: 'Grades 7–9', img: sixthForm, link: '/programs#junior-school' },
 ];
 
 const ArrowIcon = () => (

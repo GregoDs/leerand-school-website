@@ -32,7 +32,7 @@ const reasons = [
     tone: 'blue',
   },
   {
-    stage: 'Junior Secondary',
+    stage: 'Junior School',
     title: 'Confident independence',
     text: 'Learners deepen their thinking, discover their strengths and prepare to lead with responsibility.',
     tone: 'coral',
@@ -74,7 +74,7 @@ const ExploreOurSchool = () => {
           <h2>Growing Thinkers.<br />Shaping Good Humans.</h2>
           <p>
             From a child&apos;s first curious question in Kindergarten to the confident
-            choices they make in Junior Secondary, Leerand exists to make learning
+            choices they make in Junior School, Leerand exists to make learning
             meaningful, personal and full of possibility.
           </p>
         </header>

@@ -13,7 +13,7 @@ const quickLinks = [
 const programmeLinks = [
   { label: 'Kindergarten', to: '/programs#kindergarten' },
   { label: 'Primary', to: '/programs#primary' },
-  { label: 'Junior Secondary', to: '/programs#junior-secondary' },
+  { label: 'Junior School', to: '/programs#junior-school' },
   { label: 'Co-Curricular Activities', to: '/programs#co-curricular' },
   { label: 'Sports at Leerand', to: '/gallery#sports' },
 ];
@@ -56,7 +56,7 @@ const FooterContact = () => (
           <h2>Learning with purpose.<br />Growing with confidence.</h2>
           <p>
             A caring learning community in Thika, supporting every child from
-            Kindergarten through Junior Secondary.
+            Kindergarten through Junior School.
           </p>
           <Link to="/admissions" className="footer-admissions-link">
             Begin your journey

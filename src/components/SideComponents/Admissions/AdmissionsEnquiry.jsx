@@ -5,7 +5,7 @@ const schoolLevels = [
   { value: '', label: 'Select a school level' },
   { value: 'kindergarten', label: 'Kindergarten' },
   { value: 'primary', label: 'Primary' },
-  { value: 'junior-secondary', label: 'Junior Secondary' },
+  { value: 'junior-school', label: 'Junior School' },
 ];
 
 const AdmissionEnquiry = () => {

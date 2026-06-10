@@ -21,7 +21,7 @@ const scheduledEvents = [
   {
     day: '26',
     month: 'Jul',
-    title: 'Junior Secondary Briefing',
+    title: 'Junior School Briefing',
     time: '2:00 PM - 3:30 PM',
     audience: 'Grade 6 and 7 parents',
     location: 'Academic Centre',
