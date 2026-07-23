@@ -2,62 +2,72 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';
 import './ScrollingNews.css';
 
-import sportsDay from '../../assets/LearnMore/Sport-cricket-1196x1396-2.webp';
-import performingArts from '../../assets/LearnMore/Performing-Arts-Phantom.webp';
-import outdoorLearning from '../../assets/SchoolLife_img/Outdoor-Fun-on-Water.webp';
+import performingArts from '../../assets/leerand-photos/children-podium.jpg';
+import outdoorLearning from '../../assets/leerand-photos/swimmer-zoomed.jpg';
 import scienceFair from '../../assets/main_entry_points/science-whiteboard-with-student-writing-1196x1396.webp';
 import juniorPlay from '../../assets/hero_imgs/girls_toy.jpg';
-import communityDay from '../../assets/main_entry_points/Bryanston-prep-school-boy-and-girl.webp';
+import communityDay from '../../assets/photos/selected/sports-day-finish-line-race.jpg';
+import sportsDayFinish from '../../assets/photos/selected/sports-day-finish-line-race.jpg';
+import graduationDay from '../../assets/leerand-photos/graduants-zoomed-in.jpg';
+
 
 const blogItems = [
   {
-    title: 'Leerand Sports Day brings houses together for a spirited finish',
-    category: 'Sports',
-    date: '5 July 2025',
-    image: sportsDay,
-    imageAlt: 'Leerand pupils at a school sports event',
-    status: 'Happened',
-  },
-  {
-    title: 'Creative Arts Evening celebrates performance, music and confidence',
-    category: 'Arts',
-    date: '14 July 2025',
-    image: performingArts,
-    imageAlt: 'Students performing on stage',
-    status: 'Happened',
-  },
-  {
-    title: 'Outdoor learning week opens new conversations beyond class',
-    category: 'School Life',
-    date: '22 August 2025',
-    image: outdoorLearning,
-    imageAlt: 'Pupils outdoors during school life activities',
-    status: 'Upcoming',
-  },
-  {
-    title: 'Young innovators prepare for the Leerand science showcase',
-    category: 'Academics',
-    date: '12 September 2025',
-    image: scienceFair,
-    imageAlt: 'A pupil writing on a science whiteboard',
-    status: 'Upcoming',
-  },
-  {
     title: 'Early Years discovery morning welcomes new families',
     category: 'Admissions',
-    date: '20 September 2025',
+    date: '20 September 2026',
     image: juniorPlay,
     imageAlt: 'Young learners playing outdoors',
     status: 'Upcoming',
   },
   {
-    title: 'Community leadership day highlights service, teamwork and care',
-    category: 'Community',
-    date: '3 October 2025',
-    image: communityDay,
-    imageAlt: 'Leerand pupils walking together',
+    title: 'Leerand Sports Day brings houses together in colour and competition',
+    category: 'Sports',
+    date: '29 June 2026',
+    image: sportsDayFinish,
+    imageAlt: 'Learners sprinting to the finish line during Leerand Sports Day',
+    status: 'Happened',
+  },
+  {
+    title: 'Graduation Day celebrates achievement, growth and new beginnings',
+    category: 'School News',
+    date: '20 September 2026',
+    image: graduationDay,
+    imageAlt: 'Young learners playing outdoors',
     status: 'Upcoming',
   },
+  {
+    title: 'Outdoor learning week opens new conversations beyond class',
+    category: 'School Life',
+    date: '22 August 2026',
+    image: outdoorLearning,
+    imageAlt: 'Pupils outdoors during school life activities',
+    status: 'Upcoming',
+  },
+  {
+    title: 'Creative Arts celebrates performance, music and confidence',
+    category: 'Arts',
+    date: '14 July 2026',
+    image: performingArts,
+    imageAlt: 'Students performing on stage',
+    status: 'Happened',
+  },
+  // {
+  //   title: 'Young innovators prepare for the Leerand science showcase',
+  //   category: 'Academics',
+  //   date: '12 September 2026',
+  //   image: scienceFair,
+  //   imageAlt: 'A pupil writing on a science whiteboard',
+  //   status: 'Upcoming',
+  // },
+  // {
+  //   title: 'Community leadership day highlights service, teamwork and care',
+  //   category: 'Community',
+  //   date: '3 October 2025',
+  //   image: communityDay,
+  //   imageAlt: 'Leerand pupils walking together',
+  //   status: 'Upcoming',
+  // },
 ];
 
 const ScrollingNews = () => {

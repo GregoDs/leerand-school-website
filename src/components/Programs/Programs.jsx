@@ -4,23 +4,23 @@ import { Link } from 'react-router-dom';
 import './Programs.css';
 
 // ── Hero image ────────────────────────────────────────────────────────────────
-import programsHero from '../../assets/School-Life-2560x1440.jpg';
+import programsHero from '../../assets/leerand-photos/children-zoomed.jpg';
 
 // ── Programme images ──────────────────────────────────────────────────────────
-import prepSchool   from '../../assets/main_entry_points/Pre-prep-girl-on-slide.webp';
-import prePrep      from '../../assets/Gallery/02de53e7a_generated_1929746d.png';
-import sixthForm    from '../../assets/main_entry_points/Sixth-Form-A-Level-Students-1196x1396.webp';
+import prepSchool   from '../../assets/hero_imgs/girls_toy.jpg';
+import prePrep      from '../../assets/leerand-photos/children-speaking.jpg';
+import sixthForm    from '../../assets/main_entry_points/396d9021a_637579955_1550852830381658_4387154656047404797_n.jpg';
 
 // ── Co-curricular gallery images ──────────────────────────────────────────────
-import ccSport from '../../assets/LearnMore/Sport-cricket-1196x1396-2.webp';
-import ccArts from '../../assets/Gallery/661e29678_generated_d58feee5.png';
-import ccMusic from '../../assets/LearnMore/Performing-Arts-Phantom.webp';
-import ccDrama from '../../assets/hero_imgs/girls_toy.jpg';
-import ccDebate from '../../assets/main_entry_points/science-whiteboard-with-student-writing-1196x1396.webp';
-import ccStem from '../../assets/main_entry_points/Sixth-Form-A-Level-Students-1196x1396.webp';
-import ccChess from '../../assets/Gallery/51a44fab5_generated_44e87ad7.png';
-import ccService from '../../assets/SchoolLife_img/Outdoor-Fun-on-Water.webp';
+import ccArts from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
+import ccMusic from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
+import ccDrama from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
+import ccDebate from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
+import ccStem from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
+import ccChess from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
+import ccService from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
 import FooterContact from '../Footer/FooterContact';
+import ccSport from '../../assets/photos/selected/sports-day-blue-house-cheer.jpg';
 // ─────────────────────────────────────────────────────────────────────────────
 
 const entryPoints = [

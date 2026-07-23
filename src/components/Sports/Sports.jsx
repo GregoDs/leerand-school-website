@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Sports.css';
 
-import sportHero from '../../assets/LearnMore/Sport-cricket-1196x1396-2.webp';
-import swimmer from '../../assets/hero_imgs/swimmer.jpg';
-import teamSport from '../../assets/sports/feb6a3b98_generated_44aaab04.png';
+import sportHero from '../../assets/photos/selected/sports-day-house-parade.jpg';
+import teamSport from '../../assets/photos/selected/sports-day-parents-tug-of-war.jpg';
+import raceAction from '../../assets/photos/selected/sports-day-sprint-finish-crowd.jpg';
 
 const sports = ['Football', 'Athletics', 'Netball', 'Cricket', 'Swimming', 'Team Games'];
 
@@ -49,7 +49,7 @@ const SportSection = () => {
   return (
     <section id="sports" className="sport-premium-section" ref={sectionRef}>
       <div className="sport-premium-hero">
-        <img src={sportHero} alt="Leerand learner participating in sport" />
+        <img src={sportHero} alt="Leerand Sports Day house parade" />
         <div className="sport-premium-overlay" />
 
         <div className="sport-premium-hero-copy sport-reveal">
@@ -85,10 +85,10 @@ const SportSection = () => {
 
         <div className="sport-premium-image-pair sport-reveal">
           <div className="sport-premium-image sport-premium-image-main">
-            <img src={teamSport} alt="Leerand team sports programme" />
+            <img src={teamSport} alt="Parents competing in a Leerand Sports Day tug of war" />
           </div>
           <div className="sport-premium-image sport-premium-image-small">
-            <img src={swimmer} alt="Leerand swimming programme" />
+            <img src={raceAction} alt="Learners sprinting during Leerand Sports Day" />
           </div>
         </div>
 

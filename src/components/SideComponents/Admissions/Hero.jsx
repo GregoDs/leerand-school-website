@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import admissionsHero from '../../../assets/Admissions/Bryanston-Bryanston-2-e1701344424778-2560x1440.webp';
+import admissionsHero from '../../../assets/leerand-photos/leerand-hero.JPEG';
 
 const Hero = () => {
   return (

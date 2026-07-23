@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './AnimatedComments.css';
 
-import emilia from '../../assets/OurStudents_img/Prep-VM-Alexa-572x1260.webp';
-import anthony from '../../assets/OurStudents_img/Dan-572x1260.webp';
-import samuel from '../../assets/OurStudents_img/Xander-e1700568542597-572x572.webp';
-import aisha from '../../assets/OurStudents_img/Favour-572x572.webp';
+import emilia from '../../assets/leerand-photos/child-gifted2.jpg';
+import anthony from '../../assets/leerand-photos/boy-gifted.jpg';
+import samuel from '../../assets/leerand-photos/boy-gifted.jpg';
+import aisha from '../../assets/leerand-photos/child-gifted2.jpg';
 
 const comments = [
   {

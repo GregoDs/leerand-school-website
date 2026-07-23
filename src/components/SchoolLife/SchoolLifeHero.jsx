@@ -1,17 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import schoolLifeHero from '../../assets/SchoolLife_img/Outdoor-Fun-on-Water.webp';
+import schoolLifeHeroVideo from '../../assets/photos/selected/school-life-swimming-hero.MOV';
 import './SchoolLife.css';
 
 const Hero = () => {
   return (
     <section data-nav-theme="light" className="w-full h-screen relative overflow-hidden">
 
-      {/* Background Image */}
-      <img
-        src={schoolLifeHero}
-        alt="Leerand School Life"
+      <video
+        src={schoolLifeHeroVideo}
+        aria-label="Leerand pupils enjoying swimming"
         className="absolute inset-0 w-full h-full object-cover object-center z-0"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
       />
 
       {/* Dark Overlay */}

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../HeadteacherMessage/HeadteacherMessage.css';
 import './MeetOurHead.css';
-import directorImg from '../../assets/upscalemedia-transformed.jpeg';
+import directorImg from '../../assets/leerand-photos/dir.jpg';
 
 const MeetOurHead = () => (
   <section className="headteacher-message director-message" aria-labelledby="director-message-title">
@@ -27,7 +27,7 @@ const MeetOurHead = () => (
             At Leerand, we blend traditional values with a modern, creative
             approach to education. Since 2014, creativity and individual spirit
             have remained at the heart of our culture, inspiring us to think
-            openly and continuously challenge ourselves.
+            openly and continuously challenge ourselves..at kleerand we st
           </p>
         </div>
 

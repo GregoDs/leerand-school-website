@@ -140,6 +140,10 @@
   transition: transform 0.75s cubic-bezier(.77, 0, .18, 1);
 }
 
+.school-gallery-video {
+  background: #181c28;
+}
+
 .school-gallery-card:nth-child(2) .school-gallery-img,
 .school-gallery-card:nth-child(4) .school-gallery-img {
   object-position: center top;

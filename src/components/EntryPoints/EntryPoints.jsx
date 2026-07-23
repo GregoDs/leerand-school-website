@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './EntryPoints.css';
 
-import prePrep from '../../assets/Gallery/02de53e7a_generated_1929746d.png';
+import prePrep from '../../assets/leerand-photos/children-speaking.jpg';
 import prepSchool from '../../assets/main_entry_points/c0fe77b1b_5843592504643620389.jpg';
 import sixthForm from '../../assets/main_entry_points/396d9021a_637579955_1550852830381658_4387154656047404797_n.jpg';
 

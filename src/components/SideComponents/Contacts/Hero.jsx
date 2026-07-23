@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import contactsHero from '../../../assets/Admissions/Aerial-Drone-Shot-2560x1440.webp';
+import contactsHero from '../../../assets/photos/selected/sports-day-green-team-cheer.jpg';
 
 const Hero = () => {
   return (
